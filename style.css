@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Meera+Inimai&display=swap');
+
+:root {
+    --palette-pink: #DE3891;
+    --palette-green: #99BD05;
+    --palette-lavender: #7F78BB;
+    --palette-black: #222222;
+    --palette-white: #E1E1E1;
+    --pallete-beige: #D6D1A7;
+
+    --font-title: 'Baloo 2', sans-serif;
+    --font-subtitle: 'Meera Inimai', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button {
+    font-family: var(--font-title);
+    font-size: 2.8rem;
+    color: var(--palette-white);
+    display: grid;
+    place-content: center;
+    height: 4rem;
+    border-radius: 4rem;
+    border: none;
+    text-decoration: none;
+}
+
+.header {
+    background-color: var(--palette-pink);
+    display: grid;
+    place-content: center;
+    height: 4rem;
+}
+
+.main-content {
+    font-family: var(--font-title);
+    display: grid;
+    grid-template-areas: 
+    "banner banner"
+    "side form";
+    grid-template-rows: 4fr 5fr;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 4rem);
+}
+.top-banner {
+    background-color: var(--palette-green);
+    background-image: url(assets/top-banner-bg.webp);
+    background-size: cover;
+    background-position: bottom 55% right 50%;
+    grid-area: banner;
+    display: grid;
+    align-items: end;
+    justify-items: center;
+}
+.top-banner-gradient {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(0deg, var(--palette-pink) 0%, transparent 50%, transparent 100%);
+    height: 50%;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-position: top;
+    transition: all .5s;
+    background-size: 200% 200%;
+}
+.top-banner-gradient:hover {
+    background-position: bottom;
+}
+.top-banner-arrow {
+    height: 4.5rem;
+    transition: all 400ms;
+    transform: translateY(5rem);
+}
+.top-banner-gradient:hover>.top-banner-arrow {
+    filter: opacity(0);
+    transform: translateY(-5rem);
+}
+.top-banner-title {
+    filter: opacity(0);
+    text-decoration: none;
+    color: var(--palette-white);
+    font-size: 3rem;
+    transition: all 500ms;
+}
+.top-banner-gradient:hover>.top-banner-title {
+    filter: opacity(1);
+    transform: translateY(-0.5rem);
+}
+.side-container {
+    background-color: var(--palette-pink);
+    background-image: url(assets/side-container-bg.webp);
+    background-size: cover;
+    grid-area: side;
+    display: grid;
+    align-items: end;
+    justify-items: center;
+    padding: 1rem;
+}
+.side-container-button {
+    height: 4rem;
+    width: 80%;
+    border-radius: 4rem;
+    margin-bottom: 2rem;
+    background-color: var(--palette-pink);
+
+}
+.form-container {
+    background-color: var(--palette-lavender);
+    grid-area: form;
+    display: grid;
+    justify-items: center;
+}
+.form-container-title {
+    margin-top: 1rem;
+    color: var(--palette-white);
+    font-size: 3rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 75%;
+    line-height: 1em;
+}
+.form {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+}
+.form-element {
+    border-radius: 4rem;
+    width: 100%;
+    height: 3.5rem;
+    padding-inline: 1.5rem;
+}
+.form-input {
+    background-color: transparent;
+    border: 1px solid var(--palette-white);
+    color: var(--palette-white);
+    font-family: var(--font-subtitle);
+    font-size: 1rem;
+}
+
+.form-input::placeholder {
+    color: var(--palette-black);
+}
+.form-button  {
+    background-color: var(--palette-green);
+    font-family: var(--font-title);
+    font-size: 2rem;
+    color: var(--palette-white);
+    display: grid;
+    place-content: center;
+    border: none;
+    cursor: pointer;
+}
