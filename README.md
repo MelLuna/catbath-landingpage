@@ -11,7 +11,7 @@
 
 - [Access project](#access-project)
 
-- [Live Project)(#live-project)
+- [Live Project](#live-project)
 
 ## Project Description
 
