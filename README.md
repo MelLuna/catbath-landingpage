@@ -11,6 +11,8 @@
 
 - [Access project](#access-project)
 
+- [Live Project)(#live-project)
+
 ## Project Description
 
 <p align="justify">
@@ -31,3 +33,6 @@ Landing page for a fictional Skin Care company.
 
 ## Access project
 You can [access code](https://github.com/MelLuna/catbath-landingpage.git) or [download](https://github.com/MelLuna/catbath-landingpage/archive/refs/heads/main.zip).
+
+## Live Project
+Access the live project (https://melluna.github.io/catbath-landingpage/)
