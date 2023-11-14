@@ -27,7 +27,7 @@ Landing page for a fictional Skin Care company.
 
 ## Aplication
 
-![Catbath-demonstration](https://github.com/MelLuna/catbath-landingpage/assets/91919684/832d9626-4437-4f36-bdb8-ed9b27f74286)
+![Catbath-demonstration](https://github.com/MelLuna/catbath-landingpage/assets/91919684/7395176f-42b9-43b7-803d-154255c8f0ce)
 
 ## Access project
 You can [access code](https://github.com/MelLuna/catbath-landingpage.git) or [download](https://github.com/MelLuna/catbath-landingpage/archive/refs/heads/main.zip).
